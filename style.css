@@ -1,0 +1,110 @@
+
+/* modificações no body */
+
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: verdana;
+    background-color: #ec5555;
+}
+
+
+/* modificações no header */
+
+.header{
+    border-bottom: 3px solid #fff773;
+    align-items: center;
+    display: flex;
+    background-color:#1b1b1a ;
+    position: fixed;
+    width: 100%;
+    height: 69px;
+    z-index: 2; /* Z-index menor para a div do header */
+  
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.container .img{
+    margin-top: 5px ;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.navbar{
+    font-family: 'Futura Std', sans-serif;                                             
+    width: 300px;
+    color: #f5f5f5;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar a:hover{
+    color: #fff773;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video_banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Isso garantirá que o vídeo preencha completamente o espaço da div */
+    z-index: -1; /* Z-index maior para a div do vídeo */
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa com opacidade zero */
+    }
+    to {
+        opacity: 1; /* Termina com opacidade total */
+    }
+}
+
+.texto_inicio {
+    font-family: 'Futura Std', sans-serif;
+    color: #f5f5f5; /* Cor do texto */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Sombra de texto para maior legibilidade */
+    font-size: 40px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Define a altura para ocupar toda a div */
+    position: relative;
+    z-index: 1; /* Z-index menor para a div do header */
+    animation: fadeIn 10s ease; /* Aplica a animação fadeIn com duração de 2 segundos */
+}
+
